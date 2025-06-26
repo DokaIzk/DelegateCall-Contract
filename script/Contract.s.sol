@@ -15,9 +15,9 @@ contract DeployAndRun is Script {
         console.log("Contract A deployed at:", address(a));
         console.log("Contract B deployed at:", address(b));
 
-        a.setVarsCall{value: 2 ether}(address(b), 20);
+        a.setVarsCall{value: 0.01 ether}(address(b), 20);
 
-        a.setVarsDelegateCall{value: 2 ether}(address(b), 99);
+        a.setVarsDelegateCall{value: 0.01 ether}(address(b), 99);
 
         console.log("=== Contract A ===");
         console.log("A.num():", a.num());
