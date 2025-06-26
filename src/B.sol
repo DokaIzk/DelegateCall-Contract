@@ -6,7 +6,7 @@ contract B {
     address public sender;
     uint256 public value;
 
-    function setVars(uint256 _num) public payable{
+    function setVars(uint256 _num) public payable {
         num = _num;
         sender = msg.sender;
         value = msg.value;

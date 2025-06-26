@@ -6,7 +6,7 @@ import {A} from "../src/A.sol";
 import {B} from "../src/B.sol";
 
 contract TestContract is Test {
-    A public contractA; 
+    A public contractA;
     B public contractB;
     address public user;
     uint8 constant DECIMALS = 18;
